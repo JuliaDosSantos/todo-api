@@ -9,7 +9,7 @@ export class TaskController {
 
   @Post()
   create(@Body() createTaskDto: CreateTaskDto) {
-    return this.taskService.create(createTaskDto);
+    this.taskService.create(createTaskDto);
   }
 
   @Get()
