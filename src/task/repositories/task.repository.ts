@@ -16,6 +16,7 @@ export class TaskRepository implements ITaskRepository{
     }
 
     findAll() {
+       return this.repository.find();
         
     }
 
