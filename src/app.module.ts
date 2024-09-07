@@ -4,6 +4,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { Task } from './task/entities/task.entity';
 import { UserModule } from './user/user.module';
 import { User } from './user/entities/user.entity';
+import { LoginModule } from './login/login.module';
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import { User } from './user/entities/user.entity';
       synchronize: true, // NÃO usar em produção, apenas para dev (sincroniza automaticamente as entidades com o banco)
     }),
     UserModule,
+    LoginModule,
   ],
   controllers: [],
   providers: [],
