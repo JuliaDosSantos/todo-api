@@ -2,6 +2,8 @@ export class CreateTaskDto {
 
     id: number;
 
+    userid: number;
+
     title: string;
 
     data: string;

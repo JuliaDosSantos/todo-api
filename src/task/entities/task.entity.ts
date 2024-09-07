@@ -7,6 +7,9 @@ export class Task {
     id: number;
 
     @Column()
+    userid: number;
+    
+    @Column()
     title: string;
 
     @Column()
